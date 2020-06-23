@@ -1,4 +1,5 @@
 package com.example.myapp.Services;
+import com.example.myapp.Repositories.WidgetRepository;
 import com.example.myapp.models.Widget;
 //import com.example.myapp.Repositories.WidgetRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,8 +13,8 @@ import java.util.List;
 @CrossOrigin(origins = "*")
 public class WidgetService {
 
-//  @Autowired
-//  WidgetRepository repository;
+  @Autowired
+  WidgetRepository repository;
 
   List<Widget> widgets = new ArrayList<Widget>();
 

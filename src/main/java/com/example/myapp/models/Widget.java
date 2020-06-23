@@ -1,7 +1,11 @@
 package com.example.myapp.models;
+import javax.persistence.*;
 
+@Entity
 public class Widget {
   private String name;
+  @Id
+  @GeneratedValue (strategy=GenerationType.IDENTITY)
   private String id;
   private String type;
   private int widgetOrder;
